@@ -136,8 +136,6 @@ console.log(favMovies);
 console.log(favMovies.indexOf('Fast and Furious'));
 // 12. Thought question: that we declared the variable favMovies with const, and yet, we were allowed to change the array. Weird? Should we have used let?
 
-
-
 ////////////////////////////////
 // Where is Waldo
 ////////////////////////////////
@@ -149,15 +147,23 @@ const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
                     ["Petunia", ["Baked Goods", "Waldo"]]];
 
 // Remove Eggbert (hint look at the slice/splice method(s))
+whereIsWaldo.splice(1, 1);
+console.log(whereIsWaldo)
 // Change "Neff" to "No One"
+whereIsWaldo[1][2] = "No One";
+console.log(whereIsWaldo);
 // Access and console.log "Waldo"
+const iFoundWaldo = whereIsWaldo[2][1][1]
+console.log(iFoundWaldo)
 
 ////////////////////////////////
 // Excited Kitten
 ////////////////////////////////
 
 // 1. Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
-
+for (let i = "Love me, pet me! HSSSSSS!"; i <= 20; i++) {
+  console.log(i);
+}
 // 2. For every even number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
 
 ////////////////////////////////
